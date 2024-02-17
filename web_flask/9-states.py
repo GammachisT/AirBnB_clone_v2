@@ -7,7 +7,7 @@ from flask import Flask, render_template
 from models import *
 from models import storage
 app = Flask(__name__)
-import 10-dump
+
 
 @app.route('/states', strict_slashes=False)
 @app.route('/states/<state_id>', strict_slashes=False)
