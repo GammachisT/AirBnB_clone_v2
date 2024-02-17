@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-starts a Flask web application
+start Flask application
 """
 
 from flask import Flask, render_template
@@ -17,7 +17,7 @@ def states_list():
 
 
 @app.teardown_appcontext
-def teardown_db(exception)
+def teardown_db(exception):
     """closes the storage on teardown"""
     storage.close()
 
